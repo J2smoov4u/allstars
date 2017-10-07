@@ -1,0 +1,42 @@
+/*Universal Styles*/
+html {
+  font-size: 16px;
+  font-family: "Cabin", "Indie Flower", "Modak";
+}
+h1 {
+  font-family: "Cabin";
+
+}
+/*Navigation*/
+.navbar .navbar-inverse {
+  opacity: 0.25;
+}
+.bold {
+  font-weight: bold;
+}
+.shadow {
+  text-shadow: 2px 2px 2px #FFD700, 2px 2px 2px black, 1px 1px 2px #B8860B;
+}
+.gold {
+  color: #FFD700;
+}
+.darkgold {
+  color: #B8860B;
+}
+/*Jumbotron*/
+.jumbotron {
+  padding: 18rem;
+  margin-bottom: 0;
+}
+.jumbotron-team {
+  background-image: url("https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-9/21616187_905636082938948_8497771317012693222_n.jpg?oh=12ba583158e4bb4c57244d380f536a53&oe=5A4A6F84");/*Make sure to change this to the correct file location!!!*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.jumbotron-logo {
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/team-logo.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
