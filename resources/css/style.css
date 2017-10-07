@@ -5,24 +5,34 @@ html {
 }
 h1 {
   font-family: "Cabin";
+}
 
+.bold {
+  font-weight: bold;
+}
+
+.shadow {
+  text-shadow: 1px 1px 1px #FFD700, 2px 2px 2px black, 1px 1px 2px #B8860B;
+}
+
+.darkgold {
+  color: #B8860B;
 }
 /*Navigation*/
 .navbar .navbar-inverse {
   opacity: 0.25;
 }
-.bold {
-  font-weight: bold;
+.navbar .navbar-header a {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 2rem;
 }
-.shadow {
-  text-shadow: 2px 2px 2px #FFD700, 2px 2px 2px black, 1px 1px 2px #B8860B;
+li a:first-child {
+  margin-left: 4rem;
 }
-.gold {
-  color: #FFD700;
+li a {
+  margin: 0 1.5rem;
 }
-.darkgold {
-  color: #B8860B;
-}
+
 /*Jumbotron*/
 .jumbotron {
   padding: 18rem;
@@ -30,6 +40,24 @@ h1 {
 }
 .jumbotron-team {
   background-image: url("https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-9/21616187_905636082938948_8497771317012693222_n.jpg?oh=12ba583158e4bb4c57244d380f536a53&oe=5A4A6F84");/*Make sure to change this to the correct file location!!!*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.jumbotron-logo {
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/team-logo.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.jumbotron-pregame {
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_7677.JPG?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.jumbotron-huddle {
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_8030.JPG?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
