@@ -119,6 +119,12 @@ a.btn.btn-primary.btn-lg {
 a.btn.btn-primary.btn-lg:hover {
   opacity: .75;
 }
+#meet {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+
+}
 .right {
   float: right;
 }
