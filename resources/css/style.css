@@ -18,21 +18,44 @@ h1 {
 .darkgold {
   color: #B8860B;
 }
+
+.first {
+  margin-left: 5rem;
+}
+.center {
+  text-align: center;
+}
+.glyphicon {
+  color: #B8860B;
+}
+
+a.fa.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 100px;
+  max-width: 7px;
+  padding-left: 9px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  padding-top: 8px;
+  margin-top: 7px;
+}
 /*Navigation*/
-.navbar .navbar-inverse {
-  opacity: 0.25;
+nav.navbar.navbar-inverse.navbar-fixed-top {
+  padding: 1rem
 }
 .navbar .navbar-header a {
   font-family: "Indie Flower", sans-serif;
-  font-size: 2rem;
-}
-li a:first-child {
-  margin-left: 4rem;
-}
-li a {
-  margin: 0 1.5rem;
+  font-size: 2.5rem;
 }
 
+li a {
+  margin-right: 3rem;
+}
+
+.glyphicon {
+  margin-top: 1rem;
+}
 /*Jumbotron*/
 .jumbotron {
   padding: 18rem;
@@ -67,4 +90,31 @@ li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+/*   TEAM PAGE   */
+.team-header {
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_8408.JPG?raw=true");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team-header h1 {
+  padding-top: 19.5rem;
+  padding-bottom: 5rem;
+  color: white;
+  margin-top: 75px;
+  font-family: "indie flower", "Cabin";
+  font-size: 4rem;
+  text-decoration: underline;
+  text-decoration-color: #B8860B;
+}
+a.btn.btn-primary.btn-lg {
+  background-color: gray;
+  border: 2px solid black;
+}
+a.btn.btn-primary.btn-lg:hover {
+  opacity: .75;
+}
+.right {
+  float: right;
 }
