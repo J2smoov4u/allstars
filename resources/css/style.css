@@ -15,7 +15,7 @@ h1 {
   text-shadow: 1px 1px 1px #FFD700, 2px 2px 2px black, 1px 1px 2px #B8860B;
 }
 
-.darkgold {
+.darkgold, strong, span {
   color: #B8860B;
 }
 
@@ -36,7 +36,7 @@ a.fa.fa-facebook {
   max-width: 7px;
   padding-left: 9px;
   padding-bottom: 8px;
-  padding-right: 15px;
+  padding-right: 22px;
   padding-top: 8px;
   margin-top: 7px;
 }
@@ -46,11 +46,15 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 }
 .navbar .navbar-header a {
   font-family: "Indie Flower", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+}
+.navbar-inverse .navbar-nav li a {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px #b8860b;
 }
 
 li a {
-  margin-right: 3rem;
+  margin-right: 1.5rem;
 }
 
 .glyphicon {
@@ -119,11 +123,11 @@ a.btn.btn-primary.btn-lg:hover {
   float: right;
 }
 /*Roster column section*/
-/*.mtt {
+.mtt {
   background-color: #B8860B;
   max-width: 98%;
   border-radius: 10px;
-}*/
+}
 html {
   box-sizing: border-box;
 }
@@ -135,6 +139,7 @@ html {
 .column {
   float: left;
   width: 30.3%;
+  margin-left: 25px;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -182,7 +187,6 @@ html {
 }
 
 .button {
-  border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
@@ -190,8 +194,8 @@ html {
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
+  margin: -20px auto;
 }
 
 .button:hover {
