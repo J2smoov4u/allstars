@@ -8,6 +8,7 @@ $(document).ready(function(){
     pauseOnFocus: false,
     pauseOnHover: false
   });
+
   var lastScrollTop = 0;
   $(window).scroll(function(){
     var scrollTop = $(this).scrollTop();

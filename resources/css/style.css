@@ -13,7 +13,22 @@ h1 {
 .bold {
   font-weight: bold;
 }
-
+.text-white {
+  color: white;
+  font-size: 2rem;
+}
+.text-black {
+  color: black;
+  font-size: 2rem;
+}
+.text-khaki {
+  color: #f0e68c;
+  font-size: 2rem;
+}
+.text-lemonChiffon {
+  color: #fffacd;
+  font-size: 2rem;
+}
 .shadow {
   text-shadow: 1px 1px 1px #FFD700, 2px 2px 2px black, 1px 1px 2px #B8860B;
 }
@@ -31,7 +46,17 @@ h1 {
 .glyphicon {
   color: #B8860B;
 }
-
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.opacity {
+  opacity: 0. 85;
+}
 a.fa.fa-facebook {
   background: #3B5998;
   color: white;
@@ -51,7 +76,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
 .navbar .navbar-header a {
   color: #ccc;
   font-family: "Indie Flower", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 2px #b8860b;
 }
 .navbar .navbar-header a:hover {
@@ -118,6 +143,34 @@ li a {
   text-align: center;
   padding: 5rem;
 }
+.schwalbe {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+.schwalbe img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#desc {
+  font-size: 1.25rem;
+  text-align: left;
+  color: black;
+  /*text-shadow: 1px 1px 0 #b8860b, -1px -1px 0 #b8860b, 1px 1px 0 #b8860b, -1px -1px 0 #b8860b;*/
+  line-height: 1.4;
+}
+ .main {
+   position: relative;
+   bottom: 11.25rem;
+   border-right: 5px solid #b8860b;
+   border-left: 5px solid #b8860b;
+   background-color: white;
+   padding: 1rem;
+ }
+
+
+
 /*   TEAM PAGE   */
 .team-header {
   background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_8408.JPG?raw=true");
@@ -138,9 +191,11 @@ li a {
 a.btn.btn-primary.btn-lg {
   background-color: gray;
   border: 2px solid black;
+  padding: 1.25rem;
 }
 a.btn.btn-primary.btn-lg:hover {
   opacity: .75;
+  border-color: white;
 }
 #meet {
   padding-top: 1rem;
@@ -148,10 +203,10 @@ a.btn.btn-primary.btn-lg:hover {
   background-color: #ccc;
   color: #ccc;
   font-size: 2.5rem;
-  max-width: 50%;
+  max-width: 75%;
   margin: 1rem auto;
   margin-top: 1rem;
-  height: 6.68rem;
+  min-height: 6.68rem;
   border: 2px solid black;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -159,13 +214,19 @@ a.btn.btn-primary.btn-lg:hover {
 #profile-text {
   color: white;
 }
+
+.player-profile h2 {
+  padding-top: 1.5rem;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 .right {
   float: right;
 }
 /*Roster column section*/
 .mtt {
   background-color: #B8860B;
-  max-width: 98%;
+  max-width: 100%;
   border-radius: 10px;
 }
 html {
@@ -178,11 +239,11 @@ html {
 
 .column {
   float: left;
-  width: 30.3%;
+  max-width: 30.3%;
   margin-left: 25px;
-  margin-bottom: 16px;
+  margin-bottom: 2rem;
   box-shadow: 7px 7px 7px black, 7px 7px 7px gray, 1px 1px 1px white;
-  text-align: center;
+  /*text-align: center;*/
   overflow: hidden;
 }
 /*.column:hover {
@@ -200,9 +261,10 @@ html {
   transform: scale(1.02);
   overflow: hidden;
   transition: transform 500ms, opacity 500ms;
+  cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .column {
     width: 100%;
     display: block;
@@ -241,7 +303,7 @@ html {
   display: table;
 }
 .box-container h2 {
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 0;
 }
 .title, .roster-number {
@@ -249,8 +311,11 @@ html {
   float: right;
   font-size: 4rem;
   font-weight: bold;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px 1px 0 black, -1px -1px 0 black;
 }
-
+#sanno{
+  font-size: 1.65rem
+}
 .button {
   outline: 0;
   display: inline-block;
@@ -269,4 +334,12 @@ html {
 
 div.roster-number {
   float: right;
+}
+
+
+
+
+/*   SCHEDULE PAGE   */
+#schedule {
+  background-color: white;
 }
