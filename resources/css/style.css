@@ -409,7 +409,7 @@ div.roster-number {
 }
 .time {
   font-size: 1.25rem;
-  
+  color: black;
   text-align: center;
   font-stretch: extra-expanded;
 
@@ -429,8 +429,26 @@ div.roster-number {
 .f-left {
   float: left;
   padding: 1rem;
+  z-index: 1;
 }
 .f-right {
   float: right;
   padding: 1rem;
+  z-index: 1;
+}
+
+.logo {
+  max-width: 75px;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.small {
+  font-size: .85rem;
 }
