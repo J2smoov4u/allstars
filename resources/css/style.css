@@ -9,9 +9,6 @@ body {
 h1 {
   font-family: "Cabin";
 }
-.container {
-  max-width: 90%;
-}
 
 .bold {
   font-weight: bold;
@@ -42,10 +39,6 @@ h1 {
   color: #B8860B;
 }
 
-/*.flexbox {
-  display: flex;
-
-}*/
 .first {
   margin-left: 5rem;
 }
@@ -82,23 +75,12 @@ nav.navbar.navbar-inverse.navbar-fixed-top {
   padding: 1rem;
   background-color: #000;
 }
-/*.navbar .navbar-header a {
+.navbar .navbar-header a {
   color: #ccc;
   font-family: sans-serif;
   font-size: 2.5rem;
   text-shadow: 2px 2px 2px #b8860b;
-}*/
-.nav-logo {
-  max-width: 75px;
-  height: auto;
-  overflow: hidden;
-  margin: auto;
-  display: block;
-}
-.nav-logo img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  opacity: 1;
 }
 .navbar .navbar-header a:hover {
   font-weight: bold;
@@ -127,7 +109,7 @@ li a {
   margin-bottom: 0;
 }
 .jumbotron-team {
-  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/teamBanner.JPG?raw=true");/*Make sure to change this to the correct file location!!!*/
+  background-image: url("https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-9/21616187_905636082938948_8497771317012693222_n.jpg?oh=12ba583158e4bb4c57244d380f536a53&oe=5A4A6F84");/*Make sure to change this to the correct file location!!!*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -189,10 +171,41 @@ li a {
    background-color: white;
    padding: 1rem;
  }
+.gallery {
+  border-right: 5px solid #b8860b;
+  border-left: 5px solid #b8860b;
+  width: 90%;
+  height: auto;
+  /*overflow: scroll;*/
+  margin: auto;
+}
+.foto {
+  width: 100%;
+  text-align: center;
+}
+.foto h3 {
+  margin: 2rem;
+  padding: .5rem;
+  font-size: 3rem;
+}
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.flex-photo {
+  max-width: 350px;
+  height: 300px;
+  margin: 1rem;
+}
 
 
 
-/*   ROSTER PAGE   */
+/*   TEAM PAGE   */
 .team-header {
   background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_8408.JPG?raw=true");
   background-position: center;
@@ -273,6 +286,7 @@ html {
 }*/
 .image-container {
   overflow: hidden;
+  overflow: hidden;
   transition: all 0.5 ease 0.5;
 
 }
@@ -284,10 +298,18 @@ html {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
 .card {
   width: 100%;
   height: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 .card img {
   max-width: 100%;
@@ -348,15 +370,7 @@ div.roster-number {
   float: right;
 }
 
-@media only screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-  #img-tab {
-    margin: 1rem 0;
-  }
-}
+
 
 
 /*   SCHEDULE PAGE   */
@@ -427,7 +441,7 @@ div.roster-number {
 }
 .time {
   font-size: 1.25rem;
-  color: black;
+
   text-align: center;
   font-stretch: extra-expanded;
 
@@ -447,28 +461,8 @@ div.roster-number {
 .f-left {
   float: left;
   padding: 1rem;
-  z-index: 1;
-  text-align: center;
 }
 .f-right {
   float: right;
   padding: 1rem;
-  z-index: 1;
-  text-align: center;
-}
-
-.logo {
-  max-width: 75px;
-  height: auto;
-  overflow: hidden;
-  margin: auto;
-  display: block;
-}
-.logo img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.small {
-  font-size: .85rem;
 }
