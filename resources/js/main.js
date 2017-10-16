@@ -1,3 +1,4 @@
+//carousel
 $(document).ready(function(){
   $('.carousel').slick({
     slidesToScroll: 1,
@@ -8,7 +9,7 @@ $(document).ready(function(){
     pauseOnFocus: false,
     pauseOnHover: false
   });
-
+//Hide menu bar on scroll
   var lastScrollTop = 0;
   $(window).scroll(function(){
     var scrollTop = $(this).scrollTop();
