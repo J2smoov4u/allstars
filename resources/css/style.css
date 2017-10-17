@@ -211,11 +211,11 @@ div.gallery img {
   height: auto;
 
 }
-div.img-desc {
+/*div.img-desc {
   padding: 15px;
   text-align: center;
   background-color: #ccc;
-}
+}*/
 
 
 
@@ -451,6 +451,19 @@ div.roster-number {
   /*border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;*/
 }
+.logo {
+  max-width: 75px;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .middle {
   margin: auto;
 }
