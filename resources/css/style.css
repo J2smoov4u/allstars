@@ -204,6 +204,7 @@ li a {
    border-left: 5px solid #b8860b;
    background-color: white;
    padding: 1rem;
+   height: auto;
  }
 .team-gallery {
   border-right: 5px solid #b8860b;
@@ -340,6 +341,7 @@ a.btn.btn-primary.btn-lg:hover {
   background-color: #B8860B;
   max-width: 100%;
   border-radius: 10px;
+  margin-bottom: 5rem;
 }
 html {
   box-sizing: border-box;
@@ -348,27 +350,34 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+.flexbox {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 .column {
-  float: left;
+  display: flex;
   max-width: 30.3%;
   margin-left: 25px;
   margin-bottom: 2rem;
   box-shadow: 7px 7px 7px black, 7px 7px 7px gray, 1px 1px 1px white;
-  /*text-align: center;*/
-  overflow: hidden;
+  border: 1px solid black;
+  /*code for pic. overlay*/
+  position: relative;
+  width: 50%;
 }
 /*.column:hover {
   overflow: hidden;
   transform:scale(1.1);
 }*/
-.image-container {
-  overflow: hidden;
+.image-container2 {
   overflow: hidden;
   transition: all 0.5 ease 0.5;
-
+  max-height: 20rem;
 }
-.image-container:hover {
+.image-container2:hover {
   opacity: 1;
   transform: scale(1.02);
   overflow: hidden;
@@ -380,14 +389,15 @@ html {
 
 .card {
   width: 100%;
-  height: 200px;
+  /*height: 200px;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 .card img {
-  max-width: 100%;
+  width: 100%;
   max-height: 22.5rem;
-  overflow: hidden;
+  display: block;
+
 }
 
 /*.card img:hover {
@@ -396,34 +406,72 @@ html {
   overflow: hidden;
   transition: transform 500ms;
 }*/
-
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
 .box-container {
   padding: 0 16px;
   background-color: white;
   max-height: 11rem;
-  border: 2px solid black;
+  /*border: 1px solid black;*/
+  /*for text overlay*/
+  white-space: nowrap;
+  color: black;
+  font-size: .75rem;
+  position: absolute;
+  overflow: hidden;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
 }
+.column:hover .overlay {
+  height: 100%;
+}
+/*.text {
+  white-space: nowrap;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+}*/
 
-.box-container::after, .row::after {
+/*.box-container::after, .row::after {
   content: "";
   clear: both;
   display: table;
-}
+}*/
 .box-container h2 {
   padding-top: 10px;
   margin-top: 0;
 }
-.title, .roster-number {
+.title {
+
   color: grey;
   float: right;
   font-size: 4rem;
   font-weight: bold;
   text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px 1px 0 black, -1px -1px 0 black;
 }
-#sanno{
-  font-size: 1.65rem
+
+#sanno , #ice {
+  font-size: 1.5rem
 }
-.button {
+/*.button {
   outline: 0;
   display: inline-block;
   padding: 8px;
@@ -437,7 +485,7 @@ html {
 
 .button:hover {
   background-color: #555;
-}
+}*/
 
 div.roster-number {
   float: right;
@@ -560,17 +608,27 @@ footer {
   padding: 2rem;
   margin-top: 10rem;
   color: white;
+  background-color: darkgray;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+
 }
 .img-footer {
-  width: 50%;
-  height: 200px;
+
+  height: 250px;
   overflow: hidden;
-  margin-left: 50%;
+
 }
 .img-footer img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+.footer-text {
+  display: block;
+  width: 100px;
 }
 
 
@@ -578,9 +636,9 @@ footer {
 
 
 @media only screen and (min-width: 780px) , (max-width: 900px) {
-  .navbar-inverse .navbar-nav li a {
-    font-size: 10px;
-  }
+  /*.navbar-inverse .navbar-nav li a {
+    font-size: 12px;
+  }*/
   nav div.container {
     width: 100%;
     display: flex;
@@ -592,11 +650,14 @@ footer {
     height: 100%;
     margin-left: 5px;
   }
+  .hide {
+    display: none;
+  }
 
 
 }
 
-@media screen and (max-width: 480px) , (max-width: 650px;) {
+@media only screen and (max-width: 480px) {
   nav.navbar.navbar-inverse.navbar-fixed-top {
     padding: 1rem 0;
   }
@@ -671,7 +732,7 @@ footer {
   .img-footer {
     display: none;
   }
-  #mobile {display: none;}
+  #fc-mobile {display: none;}
   footer {
     padding: 0;
   }
@@ -699,5 +760,8 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
+  }
+  .hide {
+    display: none;
   }
 }

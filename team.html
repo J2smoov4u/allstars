@@ -23,25 +23,26 @@
     </style>
   </head>
   <body>
-<!--Navigation-->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand bold shadow" href="index.html">Mittelfeld Allstars</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><span class="glyphicon glyphicon-home" id="first"></span></li>
-          <li class="bold"><a href="index.html">Home</a></li>
-          <li><span class="glyphicon glyphicon-calendar"></span></li>
-          <li class="bold"><a href="schedule.html">Schedule</a></li>
-          <li><span class="glyphicon glyphicon-star-empty"></span></li>
-          <li class="bold"><a href="team.html">Roster</a></li>
-          <li><span class="glyphicon glyphicon-envelope"></span></li>
-          <li class="bold"><a href="#">Contact Us</a></li>
-          <li><a class="fa fa-facebook" id="fb" target="_blank" href="https://www.facebook.com/MFAllstars/"></a></li>
-        </ul>
-      </div>
-    </nav>
+    <!--Navigation-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand bold shadow" href="index.html">Mittelfeld Allstars</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right topnav" id="myTopnav">
+              <!--<li><span class="glyphicon glyphicon-home" id="first"></span></li>-->
+              <li class="bold"><a href="index.html">Home</a></li>
+              <!--<li><span class="glyphicon glyphicon-calendar"></span></li>-->
+              <li class="bold"><a href="schedule.html">Schedule</a></li>
+              <!--<li><span class="glyphicon glyphicon-star-empty"></span></li>-->
+              <li class="bold"><a href="team.html">Roster</a></li>
+              <!--<li><span class="glyphicon glyphicon-envelope"></span></li>-->
+              <li class="bold"><a href="#">Contact Us</a></li>
+              <li><a class="fa fa-facebook" target="_blank" href="https://www.facebook.com/MFAllstars/"></a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+            </ul>
+          </div>
+        </nav>
 
 <!--Team Info-->
 <!--         NO <lONGER NEEDED
@@ -75,10 +76,10 @@
         <!--<div class="row">-->
   <!-- Player profiles -->
         <div class="row flexbox">
-          <div class="column image-container">
-            <div class="card">
+          <div class="column image-container2">
+            <div class="card ">
               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/cedric/cedric_card_photo1.jpg?raw=true" alt="Cedric number 1 a.k.a lil" style="width: 100%">
-              <div class="box-container">
+              <div class="box-container overlay">
                 <h2 class="center">Cedric <span>"LIL"</span> Beutter</h2>
                 <p class="title">1</p>
                 <p><strong>Favorite Player:</strong> #1 Mittelfeld Allstars</p>
@@ -89,10 +90,10 @@
             </div>
           </div>
 
-          <div class="column image-container">
+          <div class="column image-container2">
             <div class="card">
               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/fa/fa%20profile%20pic.jpg?raw=true" alt="Fa number 21" style="width:100%">
-              <div class="box-container">
+              <div class="box-container overlay">
                 <h2 class="center">Fatih <span>"FA"</span> Aker</h2>
                 <p class="title">21</p>
                 <p><strong>Favorite Player:</strong> Derrick Rose</p>
@@ -103,37 +104,38 @@
             </div>
           </div>
 
-          <div class="column image-container">
+          <div class="column image-container2">
             <div class="card">
               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/ice/ice_profile_pic.jpg?raw=true" alt="christian a.k.a ice number 47" style="width:100%">
-              <div class="box-container">
-                <h2 class="center">Christian <span>"ICE"</span> Bock</h2>
+              <div class="box-container overlay">
+                <h2 class="center" id="ice">Christian <span>"ICE"</span> Bock</h2>
                 <p class="title">47</p>
                 <p><strong>Favorite Player:</strong> Allen Iverson</p>
                 <p><strong>Info:</strong> 12.09.1993, Hannover</p>
-                <p><strong>Quote:</strong>"Die einzige Grenze, es gibt keine!"</p>
-                <!--<a class="button btn btn-primary btn-lg" href="#">Images</a>-->
-              </div>
-            </div>
-          </div>
-<!--change the below examples-->
-          <div class="column image-container">
-            <div class="card">
-              <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/james/james-profile-pic.JPG?raw=true" alt="James number 7" style="width:100%">
-              <div class="box-container">
-                <h2 class="center">James McDougald</h2>
-                <p class="title">7</p>
-                <p><strong>Favorite Player:</strong> Lebron James</p>
-                <p><strong>Info:</strong> 09.11.1990, Boston, MA, USA</p><p><strong>Quote:</strong>"What you go through, you grow through."</p>
+                <p><strong>Quote:</strong>"Die einzige Grenze,<br> es gibt keine!"</p>
                 <!--<a class="button btn btn-primary btn-lg" href="#">Images</a>-->
               </div>
             </div>
           </div>
 
-          <div class="column image-container">
+          <div class="column image-container2">
+            <div class="card">
+              <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/james/james-profile-pic.JPG?raw=true" alt="James number 7" style="width:100%">
+              <div class="box-container overlay">
+                <h2 class="center">James McDougald</h2>
+                <p class="title" id="up">7</p>
+                <p><strong>Favorite Player:</strong> Lebron James</p>
+                <p><strong>Info:</strong> 09.11.1990, Boston, MA, USA</p>
+                <p><strong>Quote:</strong>"Work hard, play hard."</p>
+                <!--<a class="button btn btn-primary btn-lg" href="#">Images</a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="column image-container2">
             <div class="card">
               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/jhon/jhon-profile.jpg?raw=true" alt="John number 8" style="width:100%">
-              <div class="box-container">
+              <div class="box-container overlay">
                 <h2 class="center">Jhonathan Lira</h2>
                 <p class="title">8</p>
                 <p><strong>Favorite Player:</strong> Kobe Bryant</p>
@@ -144,11 +146,11 @@
             </div>
           </div>
 
-          <div class="column image-container">
+          <div class="column image-container2">
             <div class="card">
               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/kevin/kevin-profile-pic.jpg?raw=true" alt="kevin number 2" style="width:100%">
-              <div class="box-container">
-                <h2 class="center">Kevin </h2>
+              <div class="box-container overlay">
+                <h2 class="center">Kevin Ramen</h2>
                 <p class="title">2</p>
                 <p><strong>Favorite Player:</strong> unknown?</p>
                 <p><strong>Info:</strong></p>
@@ -157,43 +159,43 @@
             </div>
           </div>
 
-          <div class="column image-container">
+          <div class="column image-container2">
             <div class="card">
               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/paul/paul-profile-pic.jpg?raw=true" alt="paul number 30" style="width:100%">
-              <div class="box-container">
+              <div class="box-container overlay">
                 <h2 class="center">Paul Gabriel Müller</h2>
                 <p class="title">30</p>
                 <p><strong>Favorite Player:</strong> Damion Lillard</p>
                 <p><strong>Info:</strong>23,06,1983 Hannover</p>
                 <p><strong>Hobbies:</strong> Cooking</p>
-                <!--<a class="button btn btn-primary btn-lg" href="#">Images</a>-->
+
               </div>
             </div>
           </div>
 
-          <div class="column image-container">
+          <div class="column image-container2">
             <div class="card">
               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/sanno/sanno-profile-pic.jpg?raw=true" alt="Sanno number 22" style="width:100%">
-              <div class="box-container">
-                <h2 class="center" id="sanno">Alessandro <span>"Sanno"</span> Grein</h2>
+              <div class="box-container overlay">
+                <h2 class="center" id="sanno">Alessandro <span>"Sanno"</span><br> Grein</h2>
                 <p class="title">22</p>
                 <p><strong>Favorite Player:</strong> MJ, Kobe, A.I.</p>
                 <p><strong>Info: </strong>29,04,1991</p>
-                <p><strong>Hobbies:</strong> B-Ball, Cooking, Gaming, Music</p>
-                <!--<a class="button btn btn-primary btn-lg" href="#">Images</a>-->
+                <p><strong>Hobbies:</strong> B-Ball, Cooking,<br> Gaming, Music</p>
+
               </div>
             </div>
           </div>
 
-          <div class="column image-container">
+          <div class="column image-container2">
             <div class="card">
               <img src="http://www.anbmedia.com/wp/wp-content/uploads/2014/10/nba_bugsbunny.jpg" alt="John" style="width:100%">
-              <div class="box-container">
+              <div class="box-container overlay">
                 <h2 class="center">John</h2>
                 <p class="title">?</p>
                 <p><strong>Favorite Player:</strong> WHO KNOWS? MA#7???</p>
                 <p><strong>Info:</strong></p>
-                <!--<a class="button btn btn-primary btn-lg" href="#">Images</a>-->
+              </div>
               </div>
             </div>
           </div>
@@ -201,6 +203,36 @@
         </div>
       </div>
     </div>
+
+    <footer>
+       <div class="footer">
+         <div class="container">
+           <div class="row">
+             <div class="col-md-3">
+               <h3>Mittelfeld Allstars</h3>
+               <p>Telefon: +49 1521 - 4149210</p>
+               <p>E-mail: <a href="Mfallstars@web.de">Mfallstars@web.de</a></p>
+             </div>
+             <div class="col-md-3 img-footer">
+               <img src="https://github.com/J2smoov4u/allstars/blob/master/resources/images/teamlogo2.png?raw=true" alt="team logo">
+             </div>
+
+             <div class="col-md-3" id="fc-mobile">
+               <h3>FC Schwalbe v. 1899 e.V.</h3>
+               <p>Schützenallee 10</p>
+               <p>30519 Hannover</p>
+               <p>Telefon: +49 511 – 830248</p>
+               <p>E-Mail: geschaeftsstelle@schwalbe-hannover.de</p>
+             </div>
+             <div class="col-md-3 img-footer">
+               <img src="./resources/images/fcschwalbe-logo.JPG">
+             </div>
+
+           </div>
+         </div>
+       </div>
+    </footer>
+    
 <!-- JavaScript & SLICK -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>
