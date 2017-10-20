@@ -182,7 +182,7 @@ li a {
 }
 .schwalbe {
   width: 50%;
-  height: 200px;
+  height: 400px;
   overflow: hidden;
 }
 .schwalbe img {
@@ -205,6 +205,7 @@ li a {
    background-color: white;
    padding: 1rem;
    height: auto;
+   overflow: hidden;
  }
 .team-gallery {
   border-right: 5px solid #b8860b;
@@ -635,7 +636,7 @@ footer {
 /*   MEDIA QUERIES   */
 
 
-@media only screen and (min-width: 780px) , (max-width: 900px) {
+@media screen and (max-width: 800px) {
   /*.navbar-inverse .navbar-nav li a {
     font-size: 12px;
   }*/
@@ -653,11 +654,7 @@ footer {
   .hide {
     display: none;
   }
-
-
-}
-
-@media only screen and (max-width: 480px) {
+/*added to make navigation dissappear*/
   nav.navbar.navbar-inverse.navbar-fixed-top {
     padding: 1rem 0;
   }
@@ -681,7 +678,71 @@ footer {
     right: 0;
     top: 0;
     z-index: 5;*/
+    align-self: flex-end;
+  }
+  .topnav.responsive li a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  /*nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    }*/
+    div.navbar-header {
+      line-height: 1.4;
+      height: 100%;
+      margin-left: 5px;
+    }
+    ul#myTopnav.nav.navbar-nav.navbar-right.topnav {
+      width: auto;
+      height: auto;
+      align-self: flex-end;
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 2rem;
+      padding-bottom: 5px;
+    }
+    nav div.container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .container.main {
+      min-width: 98%;
+      margin:2px;
+    }
 
+}
+
+@media screen and (max-width: 480px) {
+  nav.navbar.navbar-inverse.navbar-fixed-top {
+    padding: 1rem 0;
+  }
+  .navbar-header a.navbar-brand.bold.shadow {
+    padding: 5px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-right: 5px;
+  }
+  .topnav li a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive li a.icon {
+    /*position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;*/
     align-self: flex-end;
   }
   .topnav.responsive li a {
@@ -720,7 +781,7 @@ footer {
     width: 100%;
     display: block;
   }
-  div.carousel {
+  /*div.carousel {
     display: none;
   }
   .jumbotron-team {
@@ -728,7 +789,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+  }*/
   .img-footer {
     display: none;
   }
@@ -763,5 +824,11 @@ footer {
   }
   .hide {
     display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
   }
 }
