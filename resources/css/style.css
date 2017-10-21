@@ -143,7 +143,7 @@ li a {
   margin-bottom: 0;
 }
 .jumbotron-team {
-  background-image: url("./resources/images/ma-basketball/team/groupfoto.JPG");/*Make sure to change this to the correct file location!!!*/
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/teamBanner.JPG?raw=true");/*Make sure to change this to the correct file location!!!*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -155,13 +155,13 @@ li a {
   background-size: cover;
 }
 .jumbotron-pregame {
-  background-image: url("./resources/images/ma-basketball/team/IMG_7677.JPG");
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_7677.JPG?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .jumbotron-huddle {
-  background-image: url("./resources/images/ma-basketball/team/IMG_8030.JPG");
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_8030.JPG?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
