@@ -143,7 +143,7 @@ li a {
   margin-bottom: 0;
 }
 .jumbotron-team {
-  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/teamBanner.JPG?raw=true");/*Make sure to change this to the correct file location!!!*/
+  background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/teamBanner.JPG?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -281,7 +281,15 @@ div.gallery img {
   text-align: center;
   background-color: #ccc;
 }*/
-
+.image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -513,6 +521,7 @@ div.roster-number {
 }
 #schedule {
   background-color: darkgray;
+
 }
 
 .gameplan {
@@ -521,8 +530,14 @@ div.roster-number {
   border-radius: 10px;
   margin-top: 10rem;
   margin-bottom: 2.5rem;
+  overflow: hidden;
 }
 #games {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-grow: 1;
+  flex-shrink: 2;
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #ccc;
@@ -536,6 +551,10 @@ div.roster-number {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 0;
+  overflow: hidden;
+}
+#profile-text {
+  margin: 0 15px;
 }
 .games {
   background-color: #B8860B;
@@ -555,6 +574,7 @@ div.roster-number {
   margin-top: 1rem;
   min-height: 6.68rem;
   border: 2px solid black;
+  overflow: hidden;
   /*border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;*/
 }
@@ -573,10 +593,11 @@ div.roster-number {
 
 .middle {
   margin: auto;
+  max-width: 33.3%;
 }
 .time {
   font-size: 1.25rem;
-
+  color: darkgray;
   text-align: center;
   font-stretch: extra-expanded;
 
@@ -596,20 +617,30 @@ div.roster-number {
 .f-left {
   float: left;
   padding: 1rem;
+  text-align: center;
+  width: 33.3%;
 }
 .f-right {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
   float: right;
   padding: 1rem;
+  text-align: center;
+  max-width: 33.3%;
+}
+.f-right h2 {
+
 }
 
 
 /*   FOOTER SECTION   */
 footer {
-  border-top: 2px solid #b8860b;
+  border-top: 5px solid #b8860b;
   padding: 2rem;
   margin-top: 10rem;
   color: white;
-  background-color: darkgray;
+  background-color: black;
 }
 .flex {
   display: flex;
@@ -626,12 +657,32 @@ footer {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-top: 25px;
+}
+.img-footer p {
+  margin-top: 10px;
 }
 .footer-text {
   display: block;
   width: 100px;
 }
+.james {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  font-style: normal;
 
+}
+.james span {
+  color: white;
+  font-size: 1rem;
+}
+.james span a {
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /*   MEDIA QUERIES   */
 
@@ -716,7 +767,22 @@ footer {
       min-width: 98%;
       margin:2px;
     }
-
+    .row {
+      margin-top: 15px;
+    }
+    .footer {
+      display: none;
+    }
+    .james {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      height: 10px;
+    }
+    .james span {
+      margin: 5px;
+      margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -777,6 +843,9 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  .image-container img {
+    margin-top: 10px;
+  }
   .column {
     width: 100%;
     display: block;
@@ -830,5 +899,18 @@ footer {
   }
   .main {
     width: 100%;
+  }
+  .footer {
+    display: none;
+  }
+  .james {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 10px;
+  }
+  .james span {
+    margin: 5px;
+    margin-bottom: 10px;
   }
 }
