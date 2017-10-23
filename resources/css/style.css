@@ -77,6 +77,7 @@ a.fa.fa-facebook {
 nav.navbar.navbar-inverse.navbar-fixed-top {
   padding: 1rem;
   background-color: #000;
+  border-bottom: 3px solid #b8860b;
 }
 .navbar .navbar-header a {
   color: #ccc;
@@ -294,6 +295,7 @@ div.gallery img {
 
 
 /*   TEAM PAGE   */
+
 .team-header {
   background-image: url("https://github.com/J2smoov4u/allstars/blob/master/resources/images/ma-basketball/team/IMG_8408.JPG?raw=true");
   background-position: center;
