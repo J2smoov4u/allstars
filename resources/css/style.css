@@ -192,6 +192,63 @@ li a {
   height: auto;
   display: block;
 }
+.membership {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.membership span {
+  font-size: 2rem;
+}
+.join a {
+  padding: 10px;
+  width: 100px;
+  margin: 10px;
+  border-color: red;
+}
+.membership h4 {
+  font-size: 2.5rem;
+  display: inline-block;
+  color: #b8860b;
+  font-family: "Cabin";
+}
+.join {
+  width: 90%;
+}
+.join h4 {
+  float: left;
+  margin-right: 20px;
+}
+.join a {
+  float: right;
+}
+.ball {
+  width: 100%;
+}
+.ball h4 {
+  width: 100%;
+  text-align: center;
+}
+.ball a {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  width: auto;
+  background-color: black;
+  border: 2px solid #b8860b;
+  margin-left: 25%;
+  margin-top: 20px;
+  /*box-shadow: 3px 3px 2px black, 2px 2px 2px darkgray;*/
+}
+.ball a:hover {
+  background-color: #b8860b;
+  border: 2px solid black;
+  transition: all 500ms linear;
+}
+.button a:active {
+  background-color: #696969;
+
+}
 #desc {
   font-size: 1.25rem;
   text-align: left;
@@ -600,7 +657,7 @@ div.roster-number {
 
 .time {
   font-size: 1.25rem;
-  color: darkgray;
+  color: #696969;
   text-align: center;
   font-stretch: extra-expanded;
 
@@ -905,6 +962,14 @@ footer {
   .column {
     width: 100%;
     display: block;
+  }
+  .membership a {
+    width: 95%;
+    margin: 10px;
+  }
+
+  #desc {
+    text-align: center;
   }
   /*div.carousel {
     display: none;
