@@ -2,6 +2,7 @@
 html {
   font-size: 16px;
   font-family: "Cabin", "Indie Flower", "Modak";
+
 }
 body {
   background-color: black;
@@ -259,15 +260,15 @@ div.gallery img {
   max-height: 200px;
   overflow: hidden;
   margin: 1rem;
-  border: 2px solid #ccc;
+
 
 }
 .image a img {
-  opacity: 0.65;
   max-height: 200px;
-  width: auto;
+  width: 100%;
   overflow: hidden;
-  transition: all 0.5 linear;
+  transition: all 0.5 ease-in;
+
 }
 .image a img:hover {
   opacity: 1;
@@ -276,6 +277,7 @@ div.gallery img {
   width: auto;
   overflow: hidden;
   transition: all 500ms;
+
 }
 /*div.img-desc {
   padding: 15px;
@@ -566,12 +568,15 @@ div.roster-number {
 }
 #sched {
   display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-grow: 2;
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #ccc;
   color: #000;
   font-size: 2.5rem;
-  max-width: 75%;
+  max-width: 85%;
   margin: 1rem auto;
   margin-top: 1rem;
   min-height: 6.68rem;
@@ -593,10 +598,6 @@ div.roster-number {
   display: block;
 }
 
-.middle {
-  margin: auto;
-  max-width: 33.3%;
-}
 .time {
   font-size: 1.25rem;
   color: darkgray;
@@ -616,23 +617,75 @@ div.roster-number {
   padding: 0;
 
 }
-.f-left {
+.side {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: baseline;
+  align-content: center;
+  flex-grow: 2;
+  max-width: 30%;
+  height: auto;
+  margin: 10px;
+  overflow: hidden;
+  min-height: 6rem;
+}
+/*.f-left {
+  display: flex;
+  flex-flow: column wrap;
   float: left;
-  padding: 1rem;
   text-align: center;
   width: 33.3%;
+  margin: 5px;
+}*/
+.middle {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 33.3%;
 }
-.f-right {
+/*.f-right {
   display: flex;
   flex-direction: column;
   flex-flow: wrap;
   float: right;
-  padding: 1rem;
   text-align: center;
-  max-width: 33.3%;
+  max-width: 30.3%;
+  max-height: 200rem;
+}*/
+.side h2 {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+  text-align: center;
 }
-.f-right h2 {
 
+/*   CONTACT US PAGE   */
+.holding {
+  font-family: sans-serif, "Modak";
+  font-size: 2.5rem;
+  margin-top: 15rem;
+  background-color: white;
+  border-radius: 25px;
+  border: 5px solid #b8860b;
+  margin-bottom: 10rem;
+}
+.wuc {
+  font-size: 5rem;
+  font-family: "indie flower", sans-serif;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-color: #b8860b;
+}
+.ma {
+  font-size: 5rem;
+  font-family: "Indie flower", sans-serif;
+  text-shadow: 2px 2px 2px black, 2px 2px 0 #b8860b;
+}
+.ma a {
+  color: #b8860b;
 }
 
 
@@ -647,6 +700,7 @@ footer {
 .flex {
   display: flex;
   justify-content: space-around;
+
 
 }
 .img-footer {
