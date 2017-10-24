@@ -26,6 +26,10 @@ h1 {
   color: #f0e68c;
   font-size: 2rem;
 }
+.text-gray {
+  color: #696969;
+  font-size: 2rem;
+}
 .text-lemonChiffon {
   color: #fffacd;
   font-size: 2rem;
@@ -34,12 +38,20 @@ h1 {
   text-shadow: 1px 1px 1px #FFD700, 2px 2px 2px black, 1px 1px 2px #B8860B;
 }
 .b-shadow {
+  font-family: "Cabin";
   text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px 1px 0 black, -1px -1px 0 black;
 }
 .darkgold, strong, span {
   color: #B8860B;
 }
-
+.darkgold {
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.green {
+  color: forestgreen;
+  font-size: 2rem;
+}
 .first {
   margin-left: 5rem;
 }
@@ -57,7 +69,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-a {
+a, a:hover {
   text-decoration: none;
 }
 .opacity {
@@ -604,7 +616,7 @@ div.roster-number {
   background-color: #ccc;
   color: #ccc;
   font-size: 2.5rem;
-  max-width: 75%;
+  max-width: 85%;
   margin: 1rem auto;
   margin-top: 1rem;
   min-height: 6.68rem;
@@ -727,10 +739,14 @@ div.roster-number {
   border-radius: 25px;
   border: 5px solid #b8860b;
   margin-bottom: 10rem;
+  line-height: normal;
+}
+.holding p {
+  margin-top: 20px;
 }
 .wuc {
   font-size: 5rem;
-  font-family: "indie flower", sans-serif;
+  font-family: "Indie Flower", sans-serif;
   padding: 1rem;
   padding-bottom: 1rem;
   text-decoration: underline;
@@ -738,11 +754,18 @@ div.roster-number {
 }
 .ma {
   font-size: 5rem;
-  font-family: "Indie flower", sans-serif;
+  font-family: "Cabin", sans-serif;
   text-shadow: 2px 2px 2px black, 2px 2px 0 #b8860b;
 }
 .ma a {
   color: #b8860b;
+}
+.ma a:hover {
+  box-shadow: 5px 5px 5px black;
+  background-color: #696969;
+  border-radius: 20px;
+  border: 2px solid #b8860b;
+  transition: all 250ms linear;
 }
 
 
