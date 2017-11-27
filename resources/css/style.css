@@ -10,6 +10,9 @@ body {
 h1 {
   font-family: "Cabin";
 }
+h4 {
+  text-align: center;
+}
 
 .bold {
   font-weight: bold;
@@ -314,7 +317,6 @@ div.gallery:hover {
 .flex-container {
   display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
@@ -342,6 +344,16 @@ div.gallery img {
 .image a img:hover {
   opacity: 1;
   transform: scale(1.2);
+  max-height: 200px;
+  width: auto;
+  overflow: hidden;
+  transition: all 500ms;
+
+}
+.image90 a img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transform: rotate(270deg);
   max-height: 200px;
   width: auto;
   overflow: hidden;
@@ -906,6 +918,13 @@ footer {
     .row {
       margin-top: 15px;
     }
+    .membership a {
+      width: 95%;
+      margin: 10px;
+    }
+    .membership h4 {
+      font-size: 2rem;
+    }
     .footer {
       display: none;
     }
@@ -921,7 +940,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 280px) {
   nav.navbar.navbar-inverse.navbar-fixed-top {
     padding: 1rem 0;
   }
@@ -989,6 +1008,9 @@ footer {
   .membership a {
     width: 95%;
     margin: 10px;
+  }
+  .membership h4 {
+    font-size: 2rem;
   }
 
   #desc {
