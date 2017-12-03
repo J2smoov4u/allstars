@@ -28,8 +28,8 @@ $(document).ready(function(){
     speed: 300,
     autoplay: true,
     autoplaySpeed: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
