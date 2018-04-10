@@ -1,11 +1,14 @@
 /*Universal Styles*/
-html {
+html, body {
   font-size: 16px;
   font-family: "Cabin", "Indie Flower", "Modak";
-
+  background-image: linear-gradient(black, gold, black);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body {
-  background-color: black;
+  /*background-color: black;*/
 }
 h1 {
   font-family: "Cabin";
@@ -203,7 +206,7 @@ li a {
   overflow: hidden;
 }
 .fc {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .schwalbe img {
   max-width: 100%;
